@@ -1,0 +1,25 @@
+[project]
+name = "hello-amaranth"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Tomasz Brak", email = "tomy.brak@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "amaranth>=0.5.10",
+    "amaranth-boards>=0.0.21",
+    "amaranth-yosys>=0.50.0.0.post130",
+]
+
+[project.scripts]
+hello-amaranth = "hello_amaranth:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
+
+[tool.uv.sources]
+amaranth-boards = { git = "https://github.com/amaranth-lang/amaranth-boards.git" }
+amaranth = { git = "https://github.com/amaranth-lang/amaranth.git" }
