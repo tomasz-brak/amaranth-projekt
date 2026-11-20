@@ -21,6 +21,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "amaranth-stubs"
+version = "0.1.dev98+g5154b7b12"
+source = { git = "https://github.com/tomasz-brak/amaranth-stubs.git#5154b7b1277017d67954c4d3844317f2efdd0fd8" }
+dependencies = [
+    { name = "amaranth" },
+]
+
+[[package]]
 name = "amaranth-yosys"
 version = "0.50.0.0.post130"
 source = { registry = "https://pypi.org/simple" }
@@ -38,6 +46,7 @@ source = { editable = "." }
 dependencies = [
     { name = "amaranth" },
     { name = "amaranth-boards" },
+    { name = "amaranth-stubs" },
     { name = "amaranth-yosys" },
 ]
 
@@ -45,6 +54,7 @@ dependencies = [
 requires-dist = [
     { name = "amaranth", git = "https://github.com/amaranth-lang/amaranth.git" },
     { name = "amaranth-boards", git = "https://github.com/amaranth-lang/amaranth-boards.git" },
+    { name = "amaranth-stubs", git = "https://github.com/tomasz-brak/amaranth-stubs.git" },
     { name = "amaranth-yosys", specifier = ">=0.50.0.0.post130" },
 ]
 

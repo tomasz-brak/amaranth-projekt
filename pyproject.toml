@@ -10,6 +10,7 @@ requires-python = ">=3.14"
 dependencies = [
     "amaranth>=0.5.10",
     "amaranth-boards>=0.0.21",
+    "amaranth-stubs",
     "amaranth-yosys>=0.50.0.0.post130",
 ]
 
@@ -23,3 +24,4 @@ build-backend = "uv_build"
 [tool.uv.sources]
 amaranth-boards = { git = "https://github.com/amaranth-lang/amaranth-boards.git" }
 amaranth = { git = "https://github.com/amaranth-lang/amaranth.git" }
+amaranth-stubs = { git = "https://github.com/tomasz-brak/amaranth-stubs.git" }
